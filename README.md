@@ -10,6 +10,4 @@ Classifiers:
 
 To run:
 
-`$ python main.py -c <classifier name>`
-
-where "classifier name" is knn, nb, rf, or stack
+`$ python main.py -c <classifier name>` where "classifier name" is knn, nb, rf, or stack
