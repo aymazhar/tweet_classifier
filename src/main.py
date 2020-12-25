@@ -27,19 +27,19 @@ if __name__ == '__main__':
     ytest = np.array(df_test)[:,-1]
     
   
-    if classifier == 'rf':   #RandomForests
+    if classifier == 'rf':   
         print("Running Random Forests")
         model = RandomForest(num_trees=15, max_depth=np.inf)
         utils.evaluate_model(model, X, y.flatten(), Xtest, ytest.flatten())
 
 
-    elif classifier == 'nb':  #NaiveBayes
+    elif classifier == 'nb':  
         print("Running NaiveBayes")
         model = NaiveBayes()
         utils.evaluate_model(model, X, y.flatten(), Xtest, ytest.flatten())
 
 
-    elif classifier == 'knn': #KNearestNeighbours
+    elif classifier == 'knn': 
         print("Running KNN")              
         model = KNN(k=3)
         utils.evaluate_model(model, X, y.flatten(), Xtest, ytest.flatten())

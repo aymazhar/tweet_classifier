@@ -1,8 +1,6 @@
 import numpy as np
 from scipy import stats
 
-
-
 """Given a numpy array, returns element with max count"""
 def mode(y):
     if len(y)==0:
